@@ -1,0 +1,4 @@
+function randomNumber(min, max) {
+    console.log(Math.floor(Math.random() * (max - min)) + min)
+}
+randomNumber(0,10)
