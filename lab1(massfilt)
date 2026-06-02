@@ -1,0 +1,8 @@
+function leng(name) {
+    return name.length == 2
+}
+function filterArray(array, filter) {
+    const arr = array.map(String)
+    console.log(arr.filter(filter))
+}
+filterArray([12,325,3765,6], leng)
