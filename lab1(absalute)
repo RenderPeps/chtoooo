@@ -1,0 +1,8 @@
+function absCount(count) {
+    if (count < 0) {
+        console.log(${count*-1})
+    } else {
+        console.log(count)
+    }
+}
+absCount(-100)
