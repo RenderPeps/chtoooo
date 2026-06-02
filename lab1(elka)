@@ -1,0 +1,16 @@
+const hg = 10
+const resh = '#'
+const zve = '*'
+
+for (let i=0;i<=hg;i++) {
+    if (i % 2 != 0) {
+        console.log(${zve.repeat(i)})
+    }
+    else if (i % 2 == 0) {
+        console.log(${resh.repeat(i)})
+    }
+    else {
+        stop
+    }
+}
+console.log('||')
