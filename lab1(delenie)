@@ -1,0 +1,12 @@
+function even(n, x, y) {
+   if (x > 0 || y > 0) {
+    if (z = (n / x) % y == 0) {
+        console.log(true)
+    }
+    else (
+        console.log(false)
+    )
+   }
+}
+
+even(12, 3, 3)
