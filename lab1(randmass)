@@ -1,0 +1,13 @@
+function sliceArray(array, count) {
+    const max = array.length
+    const min = 0
+    let value = Math.floor((Math.random() * (max - min)) - count)
+    if (value < 0) {
+        value = value*-1
+    }
+    console.log(value)
+    const end = count+value
+    console.log(${array.slice(value, end)})
+}
+
+sliceArray([1,2,2,3,23,443,3,3], 3)
