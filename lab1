@@ -1,1 +1,16 @@
+let a = 5
+let b = 8
+let c = 5
 
+if ((a+b>c) && (b+c>a) && (a+c>b)) {
+    const p = (a+b+c)/2
+    const s = Math.sqrt(p*(p-a)*(p-b)*(p-c))
+    const P = a+b+c
+    console.log('Треугольник существует')
+    console.log(`Площадь = ${s}`)
+    console.log(`Периметр = ${P}`)
+    console.log(`Соотношение = ${s/P}`)
+}
+else {
+    console.log('Треугольника нема')
+}
