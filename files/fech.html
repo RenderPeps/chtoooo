@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toast-уведомления</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main>
+  <h1>тостики (ням ням)</h1>
+
+  <section class="card">
+    <div class="row">
+      <button class="primary" id="btn-success">Показать сообщение</button>
+      <button class="danger" id="btn-error">Показать ошибку</button>
+      <button id="btn-history">Показать историю из localStorage</button>
+      <button id="btn-clear">Очистить историю</button>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Fetch API + JSON + async/await</h2>
+    <div class="row">
+      <button id="btn-fetch-ok">Загрузить данные (всё круто)</button>
+      <button id="btn-fetch-fail">Загрузить данные (ашибка)</button>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Журнал событий</h2>
+    <div class="log" id="log" aria-live="polite"></div>
+  </section>
+</main>
+
+<div id="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
