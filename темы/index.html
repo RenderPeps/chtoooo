@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Переключение темы</title>
+
+<script>
+  (function () {
+    var savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      document.documentElement.classList.add('dark-theme');
+    }
+  })();
+</script>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <span>Переключение темы</span>
+  <button id="theme-toggle" type="button" aria-pressed="false">
+    Тёмная тема
+  </button>
+</header>
+
+<main>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --border: #000000;
+}
+
+.dark-theme {
+  --bg: #000000;
+  --text: #ffffff;
+  --border: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  transition: background .15s ease, color .15s ease;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+main {
+  padding: 1rem;
+}
+
+button {
+  background: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: .5rem 1rem;
+  cursor: pointer;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 2px;
+}
