@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Галерея изображений</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main>
+  <h1>Галерея изображений</h1>
+  <p class="subtitle">
+    Загрузка данных через Fetch API с автоматическими повторными попытками и toast-уведомлением об ошибке.
+  </p>
+
+  <section class="card">
+    <div class="gallery-header">
+      <h2>Галерея</h2>
+      <button id="btn-refresh" class="primary">
+        <svg class="icon-refresh" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 4v5h5"/>
+          <path d="M20 20v-5h-5"/>
+          <path d="M4 9a8 8 0 0114-5.3M20 15a8 8 0 01-14 5.3"/>
+        </svg>
+        Обновить галерею
+      </button>
+    </div>
+    <div id="gallery-area" aria-live="polite"></div>
+  </section>
+</main>
+<div id="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
