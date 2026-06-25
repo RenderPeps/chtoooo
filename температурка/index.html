@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Температура в аудитории</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main>
+  <h1>Температура в аудитории</h1>
+  <p class="subtitle">
+    Отправка показаний температуры на сервер через Fetch API (POST-запрос).
+  </p>
+
+  <section class="card">
+    <h2>Внести показания</h2>
+
+    <form id="temp-form" novalidate>
+      <div class="field">
+        <label for="room">Номер аудитории</label>
+        <input
+          type="text"
+          id="room"
+          name="room"
+          inputmode="numeric"
+          autocomplete="off"
+          required
+          aria-describedby="room-hint"
+        >
+        <span class="hint" id="room-hint">Например: 204</span>
+      </div>
+
+      <div class="field">
+        <label for="temperature">Температура, °C</label>
+        <input
+          type="number"
+          id="temperature"
+          name="temperature"
+          step="0.1"
+          min="-50"
+          max="60"
+          required
+          aria-describedby="temp-hint"
+        >
+        <span class="hint" id="temp-hint">От −50 до 60</span>
+      </div>
+
+      <button type="submit" class="primary" id="submit-btn">
+        <span class="btn-spinner" id="submit-spinner" aria-hidden="true"></span>
+        <span id="submit-label">Отправить</span>
+      </button>
+    </form>
+  </section>
+</main>
+
+<div id="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
